@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+@font-face {
+    font-family: neuebold;
+    src: url(NeueHaasDisplayBold.ttf);
+}
+@font-face {
+    font-family: neuemid;
+    src: url(NeueHaasDisplayMediu.ttf);
+}
+@font-face {
+    font-family: neuelit;
+    src: url(NeueHaasDisplayThin.ttf);
+}
+@font-face {
+    font-family: modern;
+    src: url(Rejouice-Headline.ttf);
+}
+@font-face {
+    font-family: chalk;
+    src: url(CoalhandLuke\ TRIAL.ttf);
+}
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    font-family: modern;
+    font-size: 2vw;
+    top: 0;
+    background-color: #000000;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 10px;
+}
+
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #a5a5a5;
+    position: relative;
+    padding: 0 2vw;
+}
+
+#nav{
+    height: 100px;
+    width: 100%;
+    padding: 2vw 0vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav h1{
+    font-family: modern;
+    font-size: 2.4vw;
+    font-weight: 900;
+    
+}
+
+#navleft{
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    font-family: neuelit;
+}
+#navleft h4{
+    position: relative;
+    padding: 10px 20px ;
+    border: 1px solid rgb(135, 135, 135);
+    border-radius: 50px;
+    color: black;
+    font-size: 1vw;
+    transition: all ease 0.5s;
+    overflow: hidden;
+}
+#navleft h4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 70%;
+    transition: all ease 0.5s;
+}
+#navleft h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+    
+}
+#navleft h4 a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
+#navleft h4:hover a{
+    color: rgb(180, 180, 180);
+}
+
+#center{
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding-bottom: 2vw;
+}
+#left h3{
+    font-family: neuelit;
+    font-size: 1.7vw;
+    width: 20vw;
+    line-height: 1.6vw;
+}
+#right h1{
+    font-family: modern;
+    font-size: 9vw;
+    line-height: 7vw;
+    text-align: right;
+    padding-bottom: 1vw;
+    position: relative;
+    z-index: 9;
+}
+#heroshape{
+    position: absolute;
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(to top,rgb(255, 0, 0),rgb(255, 102, 0));
+    right: 5vw;
+    top: 50vh;
+    border-radius: 50%;
+    filter: blur(20px);
+    animation-name: gooey;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+}
+@keyframes gooey {
+    from{
+        transform: translate(10%,-10%) skew(0);
+    }
+    to{
+        transform: translate(-10%,10%) skew(-10deg);
+    }
+}
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #a5a5a5;
+}
+#moving-text{
+    padding-top: 4vw;
+    white-space: nowrap;
+    font-family: neuemed;
+    overflow-x: auto;
+}
+#moving-text::-webkit-scrollbar{
+    display: none;
+}
+.con{
+    color: rgb(0, 0, 0);
+    font-family: neuelit;
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#moving-text h1{
+    font-size: 8vw;
+    display: inline-block;
+}
+#gola{
+    height: 50px;
+    width: 50px;
+    background-color: orangered;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 2vw 1.2vw ;
+}
+@keyframes move{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#stilltext{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vw;
+    padding-top: 20vw;
+    line-height: 8vw;
+}
+#stilltext img{
+    width: 50vw;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgb(125, 125, 125);
+}
+.p5{
+    color: rgb(255, 255, 255);
+    font-size: 10vw;
+    font-weight: bolder;
+    font-family: modern;
+    animation-name: anim26;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 500px;
+}
+.p6{
+    color: rgb(202, 202, 202);
+    font-size: 10vw;
+    font-weight: bolder;
+    font-family: modern;
+    animation-name: anim26;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 500px;
+}
+.p7{
+    color: rgb(75, 75, 75);
+    font-size: 10vw;
+    font-weight: bolder;
+    font-family: modern;
+    animation-name: anim26;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 500px;
+}
+@keyframes anim26 {
+    from{scale: 0;opacity: 0;transform: translateX(-100vh);}
+    to{scale: 1;opacity: 1;transform: translateX(0);}
+}
+#page3{
+    min-height: 30vh;
+    width: 100%;
+    background-color: #a5a5a5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page3 h4{
+    position: relative;
+    padding-top: 0.8vw;
+    padding-bottom: 1.3vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border: 1px solid rgb(135, 135, 135);
+    border-radius: 50px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: modern;
+    font-size: 1.6vw;
+    transition: all ease 0.5s;
+    overflow: hidden;
+}
+#page3 h4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    left: 0;
+    bottom: -100%;
+    border-radius: 70%;
+    transition: all ease 0.5s;
+}
+#page3 h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+    
+}
+#page3 h4 a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
+#page3 h4:hover a{
+    color: rgb(0, 0, 0);
+}
+  
+
+
