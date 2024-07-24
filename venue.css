@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+@font-face {
+    font-family: neuebold;
+    src: url(NeueHaasDisplayBold.ttf);
+}
+@font-face {
+    font-family: neuemid;
+    src: url(NeueHaasDisplayMediu.ttf);
+}
+@font-face {
+    font-family: neuelit;
+    src: url(NeueHaasDisplayThin.ttf);
+}
+@font-face {
+    font-family: modern;
+    src: url(Rejouice-Headline.ttf);
+}
+@font-face {
+    font-family: chalk;
+    src: url(CoalhandLuke\ TRIAL.ttf);
+}
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    font-family: modern;
+    font-size: 2vw;
+    top: 0;
+    background-color: #000000;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 10px;
+}
+
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #a5a5a5;
+    position: relative;
+    padding: 0 2vw;
+}
+
+#nav{
+    height: 100px;
+    width: 100%;
+    padding: 2vw 0vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav h1{
+    font-family: modern;
+    font-size: 2.4vw;
+    font-weight: 900;
+    
+}
+
+#navleft{
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    font-family: neuelit;
+}
+#navleft h4{
+    position: relative;
+    padding: 10px 20px ;
+    border: 1px solid rgb(135, 135, 135);
+    border-radius: 50px;
+    color: black;
+    font-size: 1vw;
+    transition: all ease 0.5s;
+    overflow: hidden;
+}
+#navleft h4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 70%;
+    transition: all ease 0.5s;
+}
+#navleft h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+    
+}
+#navleft h4 a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
+#navleft h4:hover a{
+    color: rgb(180, 180, 180);
+}
+.formbox{
+    position: relative;
+    top: 10vh;
+    z-index: 10;
+    margin: auto;
+    align-items: center;
+    padding: 1.5vw;
+    background-color: #d0d0d0;
+    width:47%;
+    border-radius: 50px;
+    box-shadow: 0 0 30px rgb(143, 143, 143);
+}
+.formhead{
+    font-family: modern;
+    padding: 1vw;
+    padding-left: 3.8vw;
+    padding-right: 3.8vw;
+    display: flex;
+    background-color: rgb(134, 134, 134);
+    width: 100%;
+    border-radius: 50px;
+    gap: 10vw;
+}
+.formbody{
+    padding: 1vw;
+}
+.inputbox{
+    border-style: none;
+    border-radius: 50px;
+    padding: .7vw;
+    padding-left: 0.55vw;
+    margin-top: 20px;
+    margin-left: 1.3vw;
+    margin-right: 3.5vw;
+}
+.additem{
+    border-radius: 50px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    border-style: none;
+    margin-top: 0.2vw;
+    margin-left: 4.6vw;
+}
+.additem:hover{
+    cursor: pointer;
+    background-color: #939393;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes gooey {
+    from{
+        transform: translate(10%,-10%) skew(0);
+    }
+    to{
+        transform: translate(-10%,10%) skew(-10deg);
+    }
+}
+#heroshape{
+    position: absolute;
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(to top,rgb(255, 0, 0),rgb(255, 102, 0));
+    right: 10vw;
+    top: 30vh;
+    border-radius: 50%;
+    filter: blur(40px);
+    animation-name: gooey;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+}
