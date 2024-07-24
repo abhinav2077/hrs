@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="Untitled82_20240306142443-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="venue.css">
+    <title>HRS</title>
+</head>
+<body>
+    <div id="main">
+        <div id="page1">
+            <div id="nav">
+                <h1>human resource scheduler</h1>
+                <div id="navleft">
+                    <h4><a href="index.html">Home</a></h4>
+                    <h4><a href="myschedule.html">My Schedules</a></h4>
+                    <h4><a href="tasks.html">Tasks</a></h4>
+                    <h4><a href="venues.html">Venues</a></h4>
+                    <h4><a href="humanr.html">Human R</a></h4>
+                    <h4><a href="export.html">Export</a></h4>
+                </div>
+            </div>
+
+            <div class="formbox">
+                <div class="formhead">
+                    <h4>Venue Name</h4>
+                    <h4>Venue Code</h4>
+                    <h4>Actions</h4>
+                </div>
+                <div class="formbody">
+                    <form class="flex" method="post">
+                        <input id="venueName" class="inputbox" placeholder="Venue Name" name="venueName">
+                        <input id="venueeCode" class="inputbox" placeholder="Venue Code" name="venueCode">
+                        <button type="submit" class="additem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                                <path fill="currentColor" d="M11 19v-6H5v-2h6V5h2v6h6v2h-6v6h-2Z">    
+                                </path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="heroshape"></div>
+        </div>
+    </div>
+
+</body>
+</html>
