@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="Untitled82_20240306142443-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="myschedule.css">
+    <title>HRS</title>
+</head>
+<body>
+    <div id="main">
+        <div id="page1">
+            <div id="nav">
+                <h1>human resource scheduler</h1>
+                <div id="navleft">
+                    <h4><a href="index.html">Home</a></h4>
+                    <h4><a href="myschedule.html">My Schedules</a></h4>
+                    <h4><a href="tasks.html">Tasks</a></h4>
+                    <h4><a href="venues.html">Venues</a></h4>
+                    <h4><a href="humanr.html">Human R</a></h4>
+                    <h4><a href="export.html">Export</a></h4>
+                </div>
+            </div>
+            <div class="outerform">
+                <h1 class="formheading">New Schedule Details</h1>
+                <form class="formbody" method="post">
+                    <div class="teamnum">
+                        <label for="teamNumber">Team Number: </label>
+                        <input class="inputbox" id="teamNumber" name="teamNumber" readonly="" value="2">
+                    </div>
+                    <div class="schedulename">
+                        <label for="scheduleName">Schedule Name: </label>
+                        <input class="inputbox" id="scheduleName" name="scheduleName" required="">
+                    </div>
+                    <div class="sessioninfo">
+                        <label for="session">Session: </label>
+                        <select class="inputbox" name="session" id="session">
+                            <option class="inputbox" value="2000">2000 - 2001</option><option class="" value="2001">2001 - 2002</option><option class="inputbox" value="2002">2002 - 2003</option><option class="inputbox" value="2003">2003 - 2004</option><option class="inputbox" value="2004">2004 - 2005</option><option class="inputbox" value="2005">2005 - 2006</option><option class="inputbox" value="2006">2006 - 2007</option><option class="inputbox" value="2007">2007 - 2008</option><option class="inputbox" value="2008">2008 - 2009</option><option class="inputbox" value="2009">2009 - 2010</option><option class="inputbox" value="2010">2010 - 2011</option><option class="inputbox" value="2011">2011 - 2012</option><option class="inputbox" value="2012">2012 - 2013</option><option class="inputbox" value="2013">2013 - 2014</option><option class="inputbox" value="2014">2014 - 2015</option><option class="inputbox" value="2015">2015 - 2016</option><option class="inputbox" value="2016">2016 - 2017</option><option class="inputbox" value="2017">2017 - 2018</option><option class="inputbox" value="2018">2018 - 2019</option><option class="inputbox" value="2019">2019 - 2020</option><option class="inputbox" value="2020">2020 - 2021</option><option class="inputbox" value="2021">2021 - 2022</option><option class="inputbox" value="2022">2022 - 2023</option><option class="inputbox" value="2023">2023 - 2024</option><option class="inputbox" value="2024" selected="">2024 - 2025</option><option class="inputbox" value="2025">2025 - 2026</option><option class="inputbox" value="2026">2026 - 2027</option><option class="inputbox" value="2027">2027 - 2028</option><option class="inputbox" value="2028">2028 - 2029</option><option class="inputbox" value="2029">2029 - 2030</option><option class="inputbox" value="2030">2030 - 2031</option><option class="inputbox" value="2031">2031 - 2032</option><option class="inputbox" value="2032">2032 - 2033</option><option class="inputbox" value="2033">2033 - 2034</option><option class="inputbox" value="2034">2034 - 2035</option><option class="inputbox" value="2035">2035 - 2036</option><option class="inputbox" value="2036">2036 - 2037</option><option class="inputbox" value="2037">2037 - 2038</option><option class="inputbox" value="2038">2038 - 2039</option><option class="inputbox" value="2039">2039 - 2040</option><option class="inputbox" value="2040">2040 - 2041</option><option class="inputbox" value="2041">2041 - 2042</option><option class="inputbox" value="2042">2042 - 2043</option><option class="inputbox" value="2043">2043 - 2044</option><option class="inputbox" value="2044">2044 - 2045</option><option class="inputbox" value="2045">2045 - 2046</option><option class="inputbox" value="2046">2046 - 2047</option><option class="inputbox" value="2047">2047 - 2048</option><option class="inputbox" value="2048">2048 - 2049</option><option class="inputbox" value="2049">2049 - 2050</option>
+                        </select>
+                    </div>
+                    <div class="formatinfo">
+                        <label for="format">Format: </label>
+                        <select class="inputbox" name="format" id="format">
+                            <option class="inputbox" value="Day">Day</option><option class="inputbox" value="Date">Date</option>
+                        </select>
+                    </div>
+                    <div class="profileinfo">
+                        <label for="profile">Profile: </label>
+                        <select class="inputbox" name="profile" id="profile">
+                            <option class="p-0.5" id="1" value="1">Time Table</option><option class="p-0.5" id="2" value="2">Exam Time Table</option>
+                        </select>
+                    </div>
+                    <button class="submitbutton" type="submit">+ create schedule</button>
+                </form>
+            </div>
+            <div id="heroshape"></div>
+        </div>
+               
+</body>
+</html>
