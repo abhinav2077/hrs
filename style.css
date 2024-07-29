@@ -113,6 +113,35 @@ html, body {
     color: rgb(180, 180, 180);
 }
 
+.sidebar{
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgba(114, 114, 114, 0.297);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    width: 100%;
+    padding: 2vh 2vh;
+    right: 0;
+    gap: 20px;
+    font-family: neuelit;
+}
+
+.sidebar h4 a{
+    color: black;
+    text-decoration: none;
+}
+
+.menu{
+    margin-top: -6px;
+    display: none;
+}
+
 #center{
     height: 65vh;
     width: 100%;
@@ -175,7 +204,7 @@ html, body {
 }
 #moving-text::-webkit-scrollbar{
     display: none;
-}
+}    
 .con{
     color: rgb(0, 0, 0);
     font-family: neuelit;
@@ -301,6 +330,91 @@ html, body {
 
 #page3 h4:hover a{
     color: rgb(0, 0, 0);
+}
+  
+@media(max-width: 800px){
+    #page1{
+        background-color: aliceblue;
+    }
+    #loader{
+        font-size: 30px;
+    }
+    #nav h1{
+        font-size: 30px;
+        line-height: 25px;
+    }
+    .hideOnMobile{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        margin-left: 80px;
+    }
+    #navleft h4{
+        display: none;
+    }
+    #left h3{
+        font-size: 20px;
+        width: 50vw;
+        line-height: 20px;
+        padding-bottom: 30vh;
+    }
+    #right{
+        width: 40vw;
+    }
+    #heroshape{
+        height: 30vh;
+        width: 30vh;
+        top: 60vh;
+        margin-right: 10vh;
+    }
+    #page2{
+        min-height: 70vh;
+    }
+    #moving-text h1{
+        margin-top: 20px;
+        font-size: 50px;
+    }
+    #gola{
+        height: 20px;
+        width: 20px;
+    }
+    #stilltext{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #textmain p{
+        font-size: 100px;
+        line-height: 45px;
+    }
+    #stilltext img{
+        margin-top: 10vh;
+        border-radius: 30px;
+        width: 100%;
+    }
+    #page3{
+        min-height: 20vh;
+        width: 100%;
+        background-color: #a5a5a5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #page3 h4{
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 16px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border: 1px solid rgb(135, 135, 135);
+        border-radius: 50px;
+        background-color: black;
+        color: rgb(255, 255, 255);
+        font-family: modern;
+        font-size: 25px;
+        transition: all ease 0.5s;
+        overflow: hidden;
+    }
 }
   
 
