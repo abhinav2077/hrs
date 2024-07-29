@@ -37,4 +37,15 @@ document.addEventListener("DOMContentLoaded", function() {
   
     window.addEventListener("scroll", handleScroll);
   });
+
+const menu = document.querySelector(".menu")
+menu.addEventListener('click', (e)=>{
+  const sidebar = document.querySelector(".sidebar")
+  sidebar.style.display = 'flex'
+})
+const closebtn = document.querySelector(".closebtn")
+closebtn.addEventListener('click',(e)=>{
+  const sidebar = document.querySelector(".sidebar")
+  sidebar.style.display = 'none' 
+})
   
